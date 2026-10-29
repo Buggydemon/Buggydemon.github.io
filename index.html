@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danjuma David — Software Developer</title>
+  <meta name="description" content="Danjuma David is a software developer working across web technologies and blockchain — building thoughtful interfaces, tested smart contracts, and useful tools." />
+  <meta name="theme-color" content="#0b090e" />
+  <meta property="og:title" content="Danjuma David — Software Developer" />
+  <meta property="og:description" content="Web development, blockchain, and the details that make a product feel finished." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Danjuma David",
+      "jobTitle": "Software Developer",
+      "email": "mailto:daviddanjuma2004@gmail.com",
+      "url": "https://github.com/Buggydemon",
+      "address": { "@type": "PostalAddress", "addressCountry": "Nigeria" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Nigeria, Nsukka" },
+      "knowsAbout": ["Web development", "Blockchain", "Smart contracts", "React", "Solidity"]
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Roboto:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
+  <noscript>
+    <style>
+      @media (max-width: 900px) {
+        .menu-toggle { display: none !important; }
+        .header-inner { height: auto; flex-wrap: wrap; padding-top: 16px; }
+        .nav {
+          position: static;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 14px;
+          padding: 0 0 14px;
+          background: transparent;
+          opacity: 1;
+          visibility: visible;
+          transform: none;
+        }
+        .nav a {
+          width: auto;
+          padding: 4px 0;
+          border-bottom: 0;
+          font-size: 11px;
+          letter-spacing: 0.12em;
+        }
+        .nav .nav-cta { margin-top: 0; padding: 10px 16px; font-size: 11px; }
+      }
+    </style>
+  </noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Danjuma David — home">
+        DANJUMA<span class="brand-dot" aria-hidden="true"></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#skills">Toolkit</a>
+        <a href="#approach">Approach</a>
+        <a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Hello, I'm</p>
+          <h1 class="hero-title reveal" id="hero-title" style="--delay: .05s">
+            <span class="hero-line">Danjuma</span>
+            <span class="hero-line">David<span class="hero-dot" aria-hidden="true"></span></span>
+          </h1>
+          <p class="hero-role reveal" style="--delay: .12s">
+            Software developer <span aria-hidden="true">—</span> web &amp; blockchain
+          </p>
+          <p class="hero-lede reveal" style="--delay: .18s">
+            Electronics &amp; Computer Engineering graduate building thoughtful interfaces,
+            tested smart contracts, and tools that solve a real, everyday problem.
+          </p>
+
+          <div class="hero-actions reveal" style="--delay: .24s">
+            <a class="btn btn--dark" href="#work">View selected work <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--ghost" href="mailto:daviddanjuma2004@gmail.com">Get in touch</a>
+          </div>
+
+          <ul class="hero-meta reveal" style="--delay: .3s">
+            <li><span class="status-dot" aria-hidden="true"></span> Open to entry-level roles</li>
+            <li>Based in Nigeria <span aria-hidden="true">·</span> Remote friendly</li>
+          </ul>
+        </div>
+
+        <div class="hero-stage reveal" style="--delay: .2s" aria-label="Illustration of a smart contract code editor and connected wallet status">
+          <div class="stage-ring" aria-hidden="true"></div>
+          <div class="stage-plus stage-plus--one" aria-hidden="true">+</div>
+          <div class="stage-plus stage-plus--two" aria-hidden="true">+</div>
+
+          <div class="code-window">
+            <div class="code-bar">
+              <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="code-file">lionpay.t.sol</span>
+              <span class="code-lang">Solidity</span>
+            </div>
+            <pre class="code-body" aria-hidden="true"><code><span class="tok-com">// student fees · verified on-chain</span>
+<span class="tok-key">contract</span> <span class="tok-type">LionPay</span> {
+  <span class="tok-key">mapping</span>(<span class="tok-key">address</span> =&gt; <span class="tok-type">Receipt</span>) <span class="tok-key">public</span> receipts;
+
+  <span class="tok-key">function</span> <span class="tok-fn">payFees</span>() <span class="tok-key">external</span> <span class="tok-key">payable</span> {
+    <span class="tok-fn">require</span>(msg.value == fee, <span class="tok-str">"exact fee"</span>);
+    receipts[msg.sender] = <span class="tok-type">Receipt</span>({
+      amount: msg.value,
+      paidAt: block.timestamp
+    });
+  }
+}</code></pre>
+            <div class="code-foot">
+              <span class="code-pass"><span aria-hidden="true">✓</span> 6 tests passing</span>
+              <span class="code-env">Foundry · Anvil</span>
+            </div>
+          </div>
+
+          <div class="float-card float-card--wallet">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Wallet connected</span>
+          </div>
+
+          <div class="float-card float-card--stack" aria-hidden="true">
+            <span>React</span><span>TypeScript</span><span>Solidity</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero-foot reveal" style="--delay: .36s">
+        <a class="scroll-cue" href="#about">Scroll to explore <span aria-hidden="true">↓</span></a>
+        <span class="hero-foot-note">Portfolio · 2026</span>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>React</span><i>✦</i><span>TypeScript</span><i>✦</i><span>Solidity</span><i>✦</i><span>ethers.js</span><i>✦</i><span>Node.js</span><i>✦</i><span>Foundry</span><i>✦</i><span>Smart contracts</span><i>✦</i><span>Responsive design</span><i>✦</i>
+        <span>React</span><i>✦</i><span>TypeScript</span><i>✦</i><span>Solidity</span><i>✦</i><span>ethers.js</span><i>✦</i><span>Node.js</span><i>✦</i><span>Foundry</span><i>✦</i><span>Smart contracts</span><i>✦</i><span>Responsive design</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container split">
+        <div class="split-label">
+          <p class="label reveal">01 — About</p>
+        </div>
+        <div class="split-body">
+          <h2 class="display reveal" id="about-title">
+            A thoughtful engineer<br />for the next useful thing.
+          </h2>
+
+          <div class="about-grid">
+            <div class="about-copy reveal">
+              <p class="lead">
+                I'm an Electronics and Computer Engineering graduate from the University of
+                Nigeria, Nsukka, with a growing focus on software development, web technologies,
+                and blockchain.
+              </p>
+              <p>
+                I like the part where an idea becomes something people can actually use — a clean
+                interface, a validated API, a contract that behaves exactly as tested. Most of what
+                I know has come from building: a transparency platform for medicine availability,
+                a blockchain fees portal, and a small browser game.
+              </p>
+              <p>
+                Each project has taught me something about clarity, security, and the details that
+                make a product feel finished. I'm now looking for an entry-level team where I can
+                keep learning, contribute to real work, and grow alongside experienced developers.
+              </p>
+              <a class="text-link" href="#work">See what I've built <span aria-hidden="true">↗</span></a>
+            </div>
+
+            <aside class="fact-card reveal" aria-label="Quick facts">
+              <div class="fact">
+                <span class="fact-label">Based in</span>
+                <span class="fact-value">Nigeria</span>
+              </div>
+              <div class="fact">
+                <span class="fact-label">Education</span>
+                <span class="fact-value">University of Nigeria, Nsukka<br /><span class="fact-sub">Electronics &amp; Computer Engineering · 2026</span></span>
+              </div>
+              <div class="fact">
+                <span class="fact-label">Focus</span>
+                <span class="fact-value">Web development<br />Blockchain &amp; smart contracts</span>
+              </div>
+              <div class="fact">
+                <span class="fact-label">Currently</span>
+                <span class="fact-value fact-value--status"><span class="status-dot" aria-hidden="true"></span> Open to entry-level roles</span>
+              </div>
+              <div class="fact-links">
+                <a href="mailto:daviddanjuma2004@gmail.com">Email <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/Buggydemon" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="split work-head">
+          <div class="split-label">
+            <p class="label reveal">02 — Selected work</p>
+          </div>
+          <div class="split-body">
+            <h2 class="display reveal" id="work-title">Three projects.<br />One way of working.</h2>
+            <p class="section-intro reveal">
+              Built to answer a question: how accessible is medicine, how trustworthy is a payment,
+              how quickly can you react? Each one built, tested, and available to explore.
+            </p>
+          </div>
+        </div>
+
+        <div class="projects">
+          <!-- Medstock -->
+          <article class="project reveal">
+            <a class="project-cover cover--mint" href="https://medstock-transparency.netlify.app/" target="_blank" rel="noopener" aria-label="Open the Medstock live demo">
+              <div class="cover-top">
+                <span class="cover-index">01 / Medstock</span>
+                <span class="cover-type">Health · Web app</span>
+              </div>
+
+              <div class="cover-art cover-art--stock" aria-hidden="true">
+                <div class="stock-card">
+                  <div class="stock-search">Search medicine, pharmacy…</div>
+                  <div class="stock-row">
+                    <span class="stock-name">Paracetamol 500mg</span>
+                    <span class="stock-price">₦1,200</span>
+                    <span class="stock-tag">In stock</span>
+                  </div>
+                  <div class="stock-row">
+                    <span class="stock-name">Amoxicillin 250mg</span>
+                    <span class="stock-price">₦2,400</span>
+                    <span class="stock-tag stock-tag--low">Low</span>
+                  </div>
+                  <div class="stock-row">
+                    <span class="stock-name">Vitamin C 100mg</span>
+                    <span class="stock-price">₦900</span>
+                    <span class="stock-tag">Fresh</span>
+                  </div>
+                  <div class="stock-foot"><span class="map-pin-dot"></span> 6 pharmacies nearby</div>
+                </div>
+                <span class="map-pin map-pin--one">+</span>
+                <span class="map-pin map-pin--two">+</span>
+                <span class="map-pin map-pin--three">+</span>
+              </div>
+
+              <p class="cover-title">Medstock<span class="cover-dot" aria-hidden="true"></span></p>
+              <p class="cover-tagline">Price clarity for everyday medicine.</p>
+              <span class="cover-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <div class="project-info">
+              <div class="project-heading">
+                <p class="project-kicker">Medical supply transparency platform</p>
+                <h3>Medstock</h3>
+              </div>
+              <div class="project-detail">
+                <p>
+                  A platform for exploring medicine availability and comparing listed prices across
+                  pharmacies — with tools for pharmacies to keep their inventory honest and current.
+                </p>
+                <ul class="project-points">
+                  <li>Pharmacy inventory for prices, stock quantities, and listing freshness.</li>
+                  <li>Access management with hashed tokens, session controls, server-side validation, and audit logging.</li>
+                  <li>Interactive search, filtering, map and list views for finding medicine nearby.</li>
+                  <li>Automated tests written with Node.js's built-in test runner.</li>
+                </ul>
+                <ul class="tag-list" aria-label="Technologies used">
+                  <li>React</li><li>JavaScript</li><li>Netlify Functions</li><li>Leaflet</li>
+                </ul>
+                <div class="project-links">
+                  <a class="text-link" href="https://medstock-transparency.netlify.app/" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span></a>
+                  <a class="text-link text-link--muted" href="https://github.com/Buggydemon/open-medical-supply" target="_blank" rel="noopener">Source code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- LionPay -->
+          <article class="project reveal">
+            <a class="project-cover cover--purple" href="https://lionpay-student-fees.netlify.app/" target="_blank" rel="noopener" aria-label="Open the LionPay live demo">
+              <div class="cover-top">
+                <span class="cover-index">02 / LionPay</span>
+                <span class="cover-type">Blockchain · Fees portal</span>
+              </div>
+
+              <div class="cover-art cover-art--lion" aria-hidden="true">
+                <div class="ledger">
+                  <div class="ledger-node"><span>Fee</span><strong>0.05 ETH</strong></div>
+                  <span class="ledger-link"></span>
+                  <div class="ledger-node ledger-node--check">✓</div>
+                  <span class="ledger-link"></span>
+                  <div class="ledger-node"><span>Receipt</span><strong>#0042</strong></div>
+                </div>
+                <div class="receipt">
+                  <span class="receipt-label">Payment receipt</span>
+                  <strong>Fees paid</strong>
+                  <span class="receipt-hash">0x8f…c21 · verified</span>
+                  <span class="receipt-stamp">ON-CHAIN</span>
+                </div>
+              </div>
+
+              <p class="cover-title">LionPay</p>
+              <p class="cover-tagline">Fees with a receipt you can verify.</p>
+              <span class="cover-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <div class="project-info">
+              <div class="project-heading">
+                <p class="project-kicker">Blockchain-based student fees portal</p>
+                <h3>LionPay</h3>
+              </div>
+              <div class="project-detail">
+                <p>
+                  A student fees portal demonstrating blockchain-based fee management and payment
+                  verification, from wallet connection to a unique on-chain receipt.
+                </p>
+                <ul class="project-points">
+                  <li>Solidity contract for fee administration, exact payments, unique receipts, and controlled treasury withdrawals.</li>
+                  <li>MetaMask wallet flow integrated with ethers.js.</li>
+                  <li>Local blockchain environments configured with Foundry, Anvil, and Ganache.</li>
+                  <li>Tests covering duplicate payments, access restrictions, withdrawals, and reentrancy protection.</li>
+                </ul>
+                <p class="project-note">Designed for local blockchain testing — uses test ETH, not real funds.</p>
+                <ul class="tag-list" aria-label="Technologies used">
+                  <li>Solidity</li><li>React</li><li>TypeScript</li><li>ethers.js</li><li>Foundry</li>
+                </ul>
+                <div class="project-links">
+                  <a class="text-link" href="https://lionpay-student-fees.netlify.app/" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span></a>
+                  <a class="text-link text-link--muted" href="https://github.com/Buggydemon/lionpay-student-fees" target="_blank" rel="noopener">Source code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- NeuroRush -->
+          <article class="project reveal">
+            <a class="project-cover cover--lemon" href="https://github.com/Buggydemon/neurorush" target="_blank" rel="noopener" aria-label="Open the NeuroRush GitHub repository">
+              <div class="cover-top">
+                <span class="cover-index">03 / NeuroRush</span>
+                <span class="cover-type">Game · Vanilla JS</span>
+              </div>
+
+              <div class="cover-art cover-art--rush" aria-hidden="true">
+                <div class="reaction">
+                  <span class="ring ring--one"></span>
+                  <span class="ring ring--two"></span>
+                  <span class="ring ring--three"></span>
+                  <span class="reaction-dot"></span>
+                  <span class="reaction-time">0.28s</span>
+                </div>
+                <div class="game-chips">
+                  <span>Reflex</span><span>Precision</span><span>Cognition</span><span>Vision</span>
+                </div>
+              </div>
+
+              <p class="cover-title">NeuroRush</p>
+              <p class="cover-tagline">Four challenges. One more try.</p>
+              <span class="cover-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <div class="project-info">
+              <div class="project-heading">
+                <p class="project-kicker">Interactive cognitive arcade game</p>
+                <h3>NeuroRush</h3>
+              </div>
+              <div class="project-detail">
+                <p>
+                  A browser-based arcade game with four challenges focused on reflexes, precision,
+                  cognition, and visual perception — built entirely with vanilla web technology.
+                </p>
+                <ul class="project-points">
+                  <li>Keyboard, mouse, and touch controls with scoring, progressive challenges, and local high scores.</li>
+                  <li>Sound design through the Web Audio API.</li>
+                  <li>Responsive layouts for desktop and mobile.</li>
+                </ul>
+                <ul class="tag-list" aria-label="Technologies used">
+                  <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Web Audio API</li>
+                </ul>
+                <div class="project-links">
+                  <a class="text-link" href="https://github.com/Buggydemon/neurorush" target="_blank" rel="noopener">View source <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="split">
+          <div class="split-label">
+            <p class="label label--on-dark reveal">03 — Toolkit</p>
+          </div>
+          <div class="split-body">
+            <h2 class="display display--light reveal" id="skills-title">Tools I reach for.</h2>
+            <p class="section-intro section-intro--light reveal">
+              A practical stack, learned by building things that had to work — not by collecting
+              tutorials.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-grid">
+          <div class="skill-group reveal">
+            <div class="skill-group-head"><span>01</span><h3>Languages</h3></div>
+            <ul class="skill-list">
+              <li>JavaScript</li><li>TypeScript</li><li>Solidity</li><li>HTML</li><li>CSS</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <div class="skill-group-head"><span>02</span><h3>Web development</h3></div>
+            <ul class="skill-list">
+              <li>React</li><li>Vite</li><li>Node.js</li><li>Tailwind CSS</li><li>Netlify Functions</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <div class="skill-group-head"><span>03</span><h3>Blockchain</h3></div>
+            <ul class="skill-list">
+              <li>Smart contracts</li><li>ethers.js</li><li>MetaMask</li><li>Foundry</li><li>Anvil</li><li>Ganache</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <div class="skill-group-head"><span>04</span><h3>Tools &amp; practice</h3></div>
+            <ul class="skill-list">
+              <li>Git</li><li>GitHub</li><li>VS Code</li><li>Remix</li><li>Automated testing</li><li>API development</li><li>Responsive design</li><li>Input validation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section class="section approach" id="approach" aria-labelledby="approach-title">
+      <div class="container split">
+        <div class="split-label approach-label">
+          <p class="label reveal">04 — Approach</p>
+          <h2 class="display reveal" id="approach-title">How I build.</h2>
+          <p class="approach-note reveal">
+            The same loop on every project: understand the question, build something real, test the
+            awkward parts, then make it safe to use.
+          </p>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">01</span>
+            <div class="step-body">
+              <h3>Start with the useful question</h3>
+              <p>What should this do, for whom, and what could go wrong? I map the flow before writing the interface.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">02</span>
+            <div class="step-body">
+              <h3>Build the smallest working version</h3>
+              <p>Responsive layouts, real content, and clear components — shipped early enough to be used and criticised.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">03</span>
+            <div class="step-body">
+              <h3>Test the behaviour, not just the screen</h3>
+              <p>Validation, permissions, duplicate actions, reentrancy — the edge cases get tests, not just a manual click-through.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">04</span>
+            <div class="step-body">
+              <h3>Harden, then hand it over</h3>
+              <p>Server-side checks, hashed tokens and sessions, audit trails, and notes someone else can follow.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="label label--on-dark reveal">05 — Contact</p>
+
+        <div class="contact-head">
+          <h2 class="contact-title reveal" id="contact-title">
+            Let's build<br />something <em>useful.</em>
+          </h2>
+          <div class="contact-copy reveal">
+            <p>
+              I'm looking for an entry-level software role where I can contribute, learn from
+              experienced developers, and ship real work. If you have a role, a project, or a
+              conversation in mind, my inbox is open.
+            </p>
+            <div class="contact-actions">
+              <a class="email-link" href="mailto:daviddanjuma2004@gmail.com">daviddanjuma2004@gmail.com <span aria-hidden="true">↗</span></a>
+              <button class="copy-btn" type="button" data-copy="daviddanjuma2004@gmail.com">Copy email</button>
+              <span class="copy-toast" role="status" aria-live="polite"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-item reveal">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Nigeria <span aria-hidden="true">·</span> open to remote</span>
+          </div>
+          <div class="contact-item reveal">
+            <span class="contact-label">GitHub</span>
+            <a class="contact-value" href="https://github.com/Buggydemon" target="_blank" rel="noopener">github.com/Buggydemon <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="contact-item reveal">
+            <span class="contact-label">Education</span>
+            <span class="contact-value">University of Nigeria, Nsukka</span>
+          </div>
+          <div class="contact-item reveal">
+            <span class="contact-label">Availability</span>
+            <span class="contact-value"><span class="status-dot" aria-hidden="true"></span> Entry-level roles &amp; freelance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand brand--footer" href="#top">DANJUMA<span class="brand-dot" aria-hidden="true"></span></a>
+      <p class="footer-note">© <span id="year">2026</span> Danjuma David. Designed and built from scratch.</p>
+      <div class="footer-links">
+        <a href="mailto:daviddanjuma2004@gmail.com">Email</a>
+        <a href="https://github.com/Buggydemon" target="_blank" rel="noopener">GitHub</a>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
