@@ -980,6 +980,12 @@ ol {
   color: #1c1708;
 }
 
+.cover--clay {
+  background:
+    radial-gradient(120% 130% at 88% 4%, #f6dbc9 0%, #e9bfa7 48%, #d9a88e 100%);
+  color: #2a1710;
+}
+
 .cover-top {
   position: relative;
   z-index: 4;
@@ -1055,7 +1061,8 @@ ol {
 }
 
 .cover--mint:hover .cover-arrow,
-.cover--lemon:hover .cover-arrow {
+.cover--lemon:hover .cover-arrow,
+.cover--clay:hover .cover-arrow {
   background: rgba(23, 18, 29, 0.08);
 }
 
@@ -1388,6 +1395,142 @@ ol {
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
+
+/* Mend cover art */
+
+.cover-art--mend::before {
+  content: "";
+  position: absolute;
+  top: 7%;
+  right: 3%;
+  width: 44%;
+  aspect-ratio: 1;
+  border: 1px dashed rgba(42, 23, 16, 0.24);
+  border-radius: 50%;
+}
+
+.mend-demand {
+  position: absolute;
+  top: 16%;
+  right: 7%;
+  width: min(340px, 34%);
+  min-width: 270px;
+  padding: 16px;
+  background: #fffdf8;
+  border-radius: 12px;
+  box-shadow: 0 26px 54px rgba(42, 23, 16, 0.22);
+  color: #2a1710;
+  transform: rotate(-2deg);
+}
+
+.mend-demand-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #8a6b5b;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.mend-sev {
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: #f7e3d5;
+  color: #9a3f1e;
+  font-size: 7px;
+}
+
+.mend-demand-title {
+  display: block;
+  margin: 10px 0 3px;
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.mend-demand-meta {
+  display: block;
+  color: #8a6b5b;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.04em;
+}
+
+.mend-meter {
+  height: 6px;
+  margin: 13px 0 6px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #efe0d5;
+}
+
+.mend-fill {
+  display: block;
+  width: 62%;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--purple);
+}
+
+.mend-meter-label {
+  display: flex;
+  justify-content: space-between;
+  color: #8a6b5b;
+  font-family: var(--font-mono);
+  font-size: 7.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.mend-match {
+  position: absolute;
+  right: 9%;
+  bottom: 26%;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 12px;
+  background: #fffdf8;
+  border-radius: 999px;
+  box-shadow: 0 14px 30px rgba(42, 23, 16, 0.18);
+  color: #4a2a1c;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.mend-match i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--purple);
+}
+
+.mend-pin {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(42, 23, 16, 0.3);
+  border-radius: 50%;
+  color: #2a1710;
+  font-family: var(--font-display);
+  font-size: 14px;
+  opacity: 0.65;
+}
+
+.mend-pin--one { top: 22%; left: 40%; }
+.mend-pin--two { top: 58%; left: 34%; width: 24px; height: 24px; font-size: 11px; }
 
 /* Project info */
 
@@ -2113,6 +2256,57 @@ a.contact-value:hover {
     display: none;
   }
 
+  .mend-demand {
+    top: 12%;
+    right: 5%;
+    width: 200px;
+    min-width: 0;
+    padding: 11px;
+  }
+
+  .mend-demand-top {
+    font-size: 7px;
+  }
+
+  .mend-demand-title {
+    margin: 7px 0 2px;
+    font-size: 16px;
+  }
+
+  .mend-demand-meta {
+    font-size: 6.5px;
+  }
+
+  .mend-meter {
+    height: 5px;
+    margin: 9px 0 4px;
+  }
+
+  .mend-meter-label {
+    font-size: 6.5px;
+  }
+
+  .mend-match {
+    right: 5%;
+    bottom: 25%;
+    padding: 6px 9px;
+    font-size: 7px;
+  }
+
+  .mend-pin--one {
+    top: 18%;
+    left: 8%;
+  }
+
+  .mend-pin--two {
+    display: none;
+  }
+
+  .cover-art--mend::before {
+    right: 4%;
+    width: 48%;
+  }
+
   .stock-search {
     padding: 7px 9px;
     font-size: 8.5px;
@@ -2342,6 +2536,19 @@ a.contact-value:hover {
   .stock-card {
     top: 12%;
     width: 188px;
+  }
+
+  .mend-demand {
+    top: 11%;
+    width: 185px;
+  }
+
+  .mend-demand-title {
+    font-size: 15px;
+  }
+
+  .mend-match {
+    bottom: 24%;
   }
 
   .receipt {
